@@ -30,9 +30,10 @@ namespace wivirt
 
     struct Camera : public Behavior
     {
-        void OnTick(float t)
+        uint64_t counter = 0;
+        void OnTick(float deltaTime)
         {
-            std::cout << "Camera::OnTick WithVirt \n";
+            counter++;
         }
         void OnCreate()
         {

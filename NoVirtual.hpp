@@ -34,7 +34,7 @@ namespace novirt
             };
             DestroyInstance = [](NativeScriptComponent *self)
             {
-                delete (T*)self->m_Instance;
+                delete (T *)self->m_Instance;
                 self->m_Instance = nullptr;
             };
         }
@@ -42,9 +42,10 @@ namespace novirt
 
     struct Camera : public Behavior
     {
+        uint64_t counter = 0;
         void Tick(float deltaTime)
         {
-            std::cout << "Camera::Tick NoVirtual...\n";
+            counter++;
         }
         void Create()
         {
