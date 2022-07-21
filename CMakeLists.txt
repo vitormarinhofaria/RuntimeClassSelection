@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 set(EXECUTABLE_NAME RuntimeClassSelection)
-add_executable(${EXECUTABLE_NAME} main.cpp NoVirtual.hpp WithVirtual.hpp)
+add_executable(${EXECUTABLE_NAME} main.cpp NoVirtual.hpp WithVirtual.hpp Templated.hpp)
 
 #add_subdirectory(optick)
 add_subdirectory(entt)
